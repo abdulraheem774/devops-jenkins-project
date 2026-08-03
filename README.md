@@ -14,8 +14,14 @@ This project demonstrates a production-style CI/CD pipeline using Jenkins and Do
 3. **Build:** Compiles application code into a light-weight Docker image.
 4. **Deploy:** Stops existing containers and deploys the new version on port `8080`.
 
-##  How to Run Locally
-1. Clone the repository: `git clone https://github.com/<username>/devops-jenkins-project.git`
-2. Build Docker Image: `docker build -t my-web-app .`
-3. Run Container: `docker run -d -p 8080:80 my-web-app`
+## 🚀 How to Run Locally
 
+### Option 1: Quick Run via Docker Hub (No build required)
+1. Run container directly:
+   `docker run -d -p 8080:80 abdulraheem774/my-web-app:latest`
+
+### Option 2: Build & Run from Source Code
+1. Clone the repository: `git clone https://github.com/abdulraheem774/devops-jenkins-project`
+2. Navigate to project directory: `cd devops-jenkins-project`
+3. Build Docker Image: `docker build -t my-web-app .`
+4. Run Container: `docker run -d -p 8080:80 my-web-app`
